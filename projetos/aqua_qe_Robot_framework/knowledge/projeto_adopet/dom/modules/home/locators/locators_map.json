@@ -1,0 +1,9 @@
+{
+  "module": "home",
+  "source": "manual-curation-required",
+  "notes": [
+    "Preencher com locators aprovados pelo time a partir do DOM snapshot.",
+    "Priorizar aria-label, role, id e data-testid quando disponíveis."
+  ],
+  "locators": []
+}

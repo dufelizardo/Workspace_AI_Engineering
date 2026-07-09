@@ -1,0 +1,22 @@
+{
+  "module": "home",
+  "expected_module": null,
+  "story_id": "ADOP-0001",
+  "source_label": "aqua-qe-cli",
+  "screen_name": null,
+  "detected_screen_name": null,
+  "latest_change_id": "DOM-HOME-20260709-001",
+  "latest_fingerprint": "1a4e11c25756ddce",
+  "captured_at": "2026-07-09T02:19:45+00:00",
+  "warnings": [],
+  "dom_summary": {
+    "heading_h1": null,
+    "aria_labels": [
+      "Tela inicial",
+      "Ir para Mensagens"
+    ],
+    "roles": [],
+    "buttons": [],
+    "table_headers": []
+  }
+}

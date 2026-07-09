@@ -1,0 +1,116 @@
+{
+  "module": "limites_posicoes",
+  "source": "current-real-dom-baseline",
+  "notes": [
+    "Mapa inicial derivado do snapshot oficial DOM-LIMITES_POSICOES-20260701-001.",
+    "Priorizar aria-label, role, id e data-testid quando disponiveis.",
+    "Se o DOM mudar por correcao funcional, registrar novo snapshot antes de revisar estes locators."
+  ],
+  "locators": [
+    {
+      "name": "main_content",
+      "selector": "css:main#conteudo",
+      "strategy": "id"
+    },
+    {
+      "name": "page_section",
+      "selector": "css:section[aria-label='Limites de Posições']",
+      "strategy": "aria-label"
+    },
+    {
+      "name": "breadcrumb_nav",
+      "selector": "css:nav[aria-label='Caminho de navegação']",
+      "strategy": "aria-label"
+    },
+    {
+      "name": "page_title",
+      "selector": "css:h1.b3-section__title",
+      "strategy": "semantic-heading"
+    },
+    {
+      "name": "back_button",
+      "selector": "xpath:(//button[@aria-label='Voltar para a página inicial'] | //button[@aria-label='Voltar para a página anterior'])[1]",
+      "strategy": "aria-label-fallback"
+    },
+    {
+      "name": "update_status",
+      "selector": "css:span.data-atualizacao[role='status']",
+      "strategy": "role+class"
+    },
+    {
+      "name": "tab_listado",
+      "selector": "xpath:(//a[@role='tab'][contains(normalize-space(.),'Mercado Listado')])[1]",
+      "strategy": "role+text"
+    },
+    {
+      "name": "tab_balcao",
+      "selector": "xpath:(//a[@role='tab'][contains(normalize-space(.),'Mercado Balcão') or contains(normalize-space(.),'Mercado Balcao')])[1]",
+      "strategy": "role+text"
+    },
+    {
+      "name": "search_input_listado",
+      "selector": "css:input#searchTicker_listado",
+      "strategy": "id"
+    },
+    {
+      "name": "search_input_balcao",
+      "selector": "css:input#searchTicker_balcao",
+      "strategy": "id"
+    },
+    {
+      "name": "search_min_chars_message",
+      "selector": "xpath://*[contains(normalize-space(.),'A Busca por Ativo (Ticker) deve conter no mínimo 3 caracteres.') or contains(normalize-space(.),'A Busca por Ativo (Ticker) deve conter no minimo 3 caracteres.')]",
+      "strategy": "text"
+    },
+    {
+      "name": "clear_filters_button",
+      "selector": "xpath:(//button[@aria-label='Limpar todos os filtros'])[1]",
+      "strategy": "aria-label"
+    },
+    {
+      "name": "export_button",
+      "selector": "xpath:(//button[@aria-label='Abrir menu de exportação de arquivo com opções de formato e escopo'])[1]",
+      "strategy": "aria-label"
+    },
+    {
+      "name": "export_menu",
+      "selector": "css:ul[role='menu'][aria-label='Opções de exportação']",
+      "strategy": "role+aria-label"
+    },
+    {
+      "name": "table_listado",
+      "selector": "css:table[aria-label='Tabela de Limites de Posições — Mercado Listado']",
+      "strategy": "aria-label"
+    },
+    {
+      "name": "table_balcao",
+      "selector": "css:table[aria-label='Tabela de Limites de Posições — Mercado Balcão']",
+      "strategy": "aria-label"
+    },
+    {
+      "name": "table_headers",
+      "selector": "xpath://*[@role='columnheader']",
+      "strategy": "role"
+    },
+    {
+      "name": "page_counter",
+      "selector": "css:p.pagina-dinamica",
+      "strategy": "class"
+    },
+    {
+      "name": "page_size_selector",
+      "selector": "css:b3-select-item[idinput='limitesPageSizeId']",
+      "strategy": "attribute"
+    },
+    {
+      "name": "next_page_button",
+      "selector": "css:button#paginator_btn_nextPage",
+      "strategy": "id"
+    },
+    {
+      "name": "last_page_button",
+      "selector": "css:button#paginator_btn_lastPage",
+      "strategy": "id"
+    }
+  ]
+}

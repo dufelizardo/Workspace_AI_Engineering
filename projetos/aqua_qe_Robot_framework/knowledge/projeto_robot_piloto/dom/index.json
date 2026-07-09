@@ -1,0 +1,74 @@
+﻿{
+  "version": 1,
+  "updated_at": "2026-07-08",
+  "modules": {
+    "home": {
+      "module": "home",
+      "created_at": "2026-07-08",
+      "snapshots": [
+        {
+          "change_id": "DOM-HOME-20260708-001",
+          "captured_at": "2026-07-08T00:00:00+00:00",
+          "source_label": "synthetic-eduq-90-2026-07-08",
+          "story_id": "EDUQ-90",
+          "fingerprint": "c7ec9caa81eea1df",
+          "relative_snapshot_path": "snapshots/DOM-HOME-20260708-001.html",
+          "relative_diff_path": null,
+          "detected_screen_name": "Home — Projeto Piloto",
+          "warnings": [
+            "Snapshot sintético gerado com base nos requisitos do EDUQ-90.",
+            "Substituir por captura real do DOM em ambiente de homologação."
+          ]
+        }
+      ]
+    },
+    "ativos_aceitos_garantias": {
+      "module": "ativos_aceitos_garantias",
+      "created_at": "2026-07-01",
+      "snapshots": [
+        {
+          "change_id": "DOM-ATIVOS_ACEITOS_GARANTIAS-20260701-001",
+          "captured_at": "2026-07-01T13:13:17+00:00",
+          "source_label": "manual-chat-import-2026-07-01",
+          "story_id": null,
+          "fingerprint": "42b0722ef785c96a",
+          "relative_snapshot_path": "snapshots/DOM-ATIVOS_ACEITOS_GARANTIAS-20260701-001.html",
+          "relative_diff_path": null,
+          "detected_screen_name": "Ativos Aceitos em Garantia",
+          "warnings": [
+            "expected_module='limites_posicoes' difere do modulo registrado 'ativos_aceitos_garantias'",
+            "heading_detected='Ativos Aceitos em Garantia' nao coincide com o modulo 'ativos_aceitos_garantias'"
+          ]
+        },
+        {
+          "change_id": "DOM-ATIVOS_ACEITOS_GARANTIAS-20260701-002",
+          "captured_at": "2026-07-01T13:35:30+00:00",
+          "source_label": "current-real-dom-baseline",
+          "story_id": "EDUQ-1717",
+          "fingerprint": "42b0722ef785c96a",
+          "relative_snapshot_path": "snapshots/DOM-ATIVOS_ACEITOS_GARANTIAS-20260701-002.html",
+          "relative_diff_path": null,
+          "detected_screen_name": "Ativos Aceitos em Garantia",
+          "warnings": []
+        }
+      ]
+    },
+    "limites_posicoes": {
+      "module": "limites_posicoes",
+      "created_at": "2026-07-01",
+      "snapshots": [
+        {
+          "change_id": "DOM-LIMITES_POSICOES-20260701-001",
+          "captured_at": "2026-07-01T13:39:18+00:00",
+          "source_label": "current-real-dom-baseline",
+          "story_id": "EDUQ-1997",
+          "fingerprint": "f8a76725c12ffb07",
+          "relative_snapshot_path": "snapshots/DOM-LIMITES_POSICOES-20260701-001.html",
+          "relative_diff_path": null,
+          "detected_screen_name": "Limites de Posições",
+          "warnings": []
+        }
+      ]
+    }
+  }
+}

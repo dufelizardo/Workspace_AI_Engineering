@@ -1,0 +1,201 @@
+{
+  "module": "home",
+  "source": "pom-derived-eduq-90-2026-07-08",
+  "notes": [
+    "Locators derivados do home_pom.resource gerado para EDUQ-90.",
+    "Estratégia: data-testid preferencial em todos os elementos de card.",
+    "Seletores compostos (card >> badge) usam operador >> do Browser library.",
+    "Sem snapshot HTML real capturado — atualizar ao inspecionar o DOM em ambiente de homologação."
+  ],
+  "locators": [
+    {
+      "name": "TITULO_HOME",
+      "robot_var": "${TITULO_HOME}",
+      "selector": "css=[data-testid=\"home-title\"]",
+      "strategy": "data-testid",
+      "section": "page"
+    },
+    {
+      "name": "TITULO_SECAO_1",
+      "robot_var": "${TITULO_SECAO_1}",
+      "selector": "css=[data-testid=\"section-1-title\"]",
+      "strategy": "data-testid",
+      "section": "secao_1"
+    },
+    {
+      "name": "CARD_MINHA_OPERACAO",
+      "robot_var": "${CARD_MINHA_OPERACAO}",
+      "selector": "css=[data-testid=\"card-minha-operacao\"]",
+      "strategy": "data-testid",
+      "section": "secao_1",
+      "estado": "desabilitado",
+      "badge": "EM BREVE",
+      "story": "EDUQ-90 R1"
+    },
+    {
+      "name": "CARD_TARIFACAO",
+      "robot_var": "${CARD_TARIFACAO}",
+      "selector": "css=[data-testid=\"card-tarifacao-lancamentos\"]",
+      "strategy": "data-testid",
+      "section": "secao_1",
+      "estado": "habilitado"
+    },
+    {
+      "name": "CARD_EVENTOS_CORP",
+      "robot_var": "${CARD_EVENTOS_CORP}",
+      "selector": "css=[data-testid=\"card-eventos-corporativos\"]",
+      "strategy": "data-testid",
+      "section": "secao_1",
+      "estado": "habilitado"
+    },
+    {
+      "name": "CARD_ATENDIMENTO_BS",
+      "robot_var": "${CARD_ATENDIMENTO_BS}",
+      "selector": "css=[data-testid=\"card-atendimento-buy-side\"]",
+      "strategy": "data-testid",
+      "section": "secao_1",
+      "estado": "habilitado"
+    },
+    {
+      "name": "CARD_MONITORAMENTO",
+      "robot_var": "${CARD_MONITORAMENTO}",
+      "selector": "css=[data-testid=\"card-monitoramento-plataformas\"]",
+      "strategy": "data-testid",
+      "section": "secao_1",
+      "estado": "habilitado"
+    },
+    {
+      "name": "CARD_CONTRATACAO",
+      "robot_var": "${CARD_CONTRATACAO}",
+      "selector": "css=[data-testid=\"card-contratacao-servicos\"]",
+      "strategy": "data-testid",
+      "section": "secao_1",
+      "estado": "habilitado",
+      "badge": "NOVIDADE",
+      "story": "EDUQ-90 R2"
+    },
+    {
+      "name": "CARD_B3_DEVELOPERS",
+      "robot_var": "${CARD_B3_DEVELOPERS}",
+      "selector": "css=[data-testid=\"card-b3-developers\"]",
+      "strategy": "data-testid",
+      "section": "secao_1",
+      "estado": "habilitado",
+      "badge": "NOVIDADE",
+      "story": "EDUQ-90 R3"
+    },
+    {
+      "name": "TITULO_SECAO_2",
+      "robot_var": "${TITULO_SECAO_2}",
+      "selector": "css=[data-testid=\"section-2-title\"]",
+      "strategy": "data-testid",
+      "section": "secao_2",
+      "texto_esperado": "Comunicação B3",
+      "story": "EDUQ-90 R4"
+    },
+    {
+      "name": "CARD_ATENDE_B3",
+      "robot_var": "${CARD_ATENDE_B3}",
+      "selector": "css=[data-testid=\"card-comunicado-atende-b3\"]",
+      "strategy": "data-testid",
+      "section": "secao_2",
+      "estado": "desabilitado",
+      "badge": "EM BREVE",
+      "story": "EDUQ-90 R5"
+    },
+    {
+      "name": "CARD_ATENDE_B3_ICONE",
+      "robot_var": "${CARD_ATENDE_B3_ICONE}",
+      "selector": "css=[data-testid=\"card-comunicado-atende-b3\"] [data-testid=\"card-icon\"]",
+      "strategy": "data-testid-scoped",
+      "section": "secao_2",
+      "icone": "notifications",
+      "story": "EDUQ-90 R5"
+    },
+    {
+      "name": "CARD_OFICIOS",
+      "robot_var": "${CARD_OFICIOS}",
+      "selector": "css=[data-testid=\"card-oficios-comunicados\"]",
+      "strategy": "data-testid",
+      "section": "secao_2",
+      "estado": "habilitado"
+    },
+    {
+      "name": "CARD_NOVIDADES_B3",
+      "robot_var": "${CARD_NOVIDADES_B3}",
+      "selector": "css=[data-testid=\"card-novidades-b3\"]",
+      "strategy": "data-testid",
+      "section": "secao_2",
+      "estado": "habilitado",
+      "badge": "NOVIDADE",
+      "story": "EDUQ-90 R6"
+    },
+    {
+      "name": "TITULO_SECAO_3",
+      "robot_var": "${TITULO_SECAO_3}",
+      "selector": "css=[data-testid=\"section-3-title\"]",
+      "strategy": "data-testid",
+      "section": "secao_3"
+    },
+    {
+      "name": "CARD_IMERCADO",
+      "robot_var": "${CARD_IMERCADO}",
+      "selector": "css=[data-testid=\"card-imercado\"]",
+      "strategy": "data-testid",
+      "section": "secao_3",
+      "estado": "habilitado",
+      "story": "EDUQ-90 R7"
+    },
+    {
+      "name": "CARD_BTB",
+      "robot_var": "${CARD_BTB}",
+      "selector": "css=[data-testid=\"card-btb\"]",
+      "strategy": "data-testid",
+      "section": "secao_3",
+      "estado": "habilitado",
+      "story": "EDUQ-90 R7"
+    },
+    {
+      "name": "CARD_TRADEMATE",
+      "robot_var": "${CARD_TRADEMATE}",
+      "selector": "css=[data-testid=\"card-trademate\"]",
+      "strategy": "data-testid",
+      "section": "secao_3",
+      "estado": "desabilitado",
+      "badge": "EM BREVE",
+      "story": "EDUQ-90 R8"
+    },
+    {
+      "name": "SEL_BADGE_EM_BREVE",
+      "robot_var": "${SEL_BADGE_EM_BREVE}",
+      "selector": "[data-testid=\"badge-em-breve\"]",
+      "strategy": "data-testid",
+      "section": "card-interno",
+      "uso": "seletor relativo — usar com operador >> dentro do card"
+    },
+    {
+      "name": "SEL_BADGE_NOVIDADE",
+      "robot_var": "${SEL_BADGE_NOVIDADE}",
+      "selector": "[data-testid=\"badge-novidade\"]",
+      "strategy": "data-testid",
+      "section": "card-interno",
+      "uso": "seletor relativo — usar com operador >> dentro do card"
+    },
+    {
+      "name": "SEL_BTN_ACESSAR",
+      "robot_var": "${SEL_BTN_ACESSAR}",
+      "selector": "[data-testid=\"card-cta-acessar\"]",
+      "strategy": "data-testid",
+      "section": "card-interno",
+      "uso": "seletor relativo — usar com operador >> dentro do card"
+    },
+    {
+      "name": "SEL_CARD_ICONE",
+      "robot_var": "${SEL_CARD_ICONE}",
+      "selector": "[data-testid=\"card-icon\"]",
+      "strategy": "data-testid",
+      "section": "card-interno",
+      "uso": "seletor relativo — usar com operador >> dentro do card"
+    }
+  ]
+}

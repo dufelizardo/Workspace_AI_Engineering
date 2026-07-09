@@ -1,0 +1,58 @@
+{
+  "module": "home",
+  "expected_module": "home",
+  "story_id": "EDUQ-90",
+  "source_label": "synthetic-eduq-90-2026-07-08",
+  "screen_name": "Home — Projeto Piloto",
+  "detected_screen_name": "Home — Projeto Piloto",
+  "latest_change_id": "DOM-HOME-20260708-001",
+  "latest_fingerprint": "c7ec9caa81eea1df",
+  "captured_at": "2026-07-08T00:00:00+00:00",
+  "warnings": [
+    "Snapshot sintético gerado com base nos requisitos do EDUQ-90.",
+    "Substituir por captura real do DOM em ambiente de homologação para validar data-testid."
+  ],
+  "dom_summary": {
+    "heading_h1": "Home",
+    "secoes": [
+      {
+        "id": "secao_1",
+        "testid": "section-1-title",
+        "cards": [
+          { "testid": "card-minha-operacao",          "estado": "desabilitado", "badge": "EM BREVE",  "regra": "R1" },
+          { "testid": "card-tarifacao-lancamentos",   "estado": "habilitado",   "badge": null },
+          { "testid": "card-eventos-corporativos",    "estado": "habilitado",   "badge": null },
+          { "testid": "card-atendimento-buy-side",    "estado": "habilitado",   "badge": null },
+          { "testid": "card-monitoramento-plataformas","estado": "habilitado",  "badge": null },
+          { "testid": "card-contratacao-servicos",    "estado": "habilitado",   "badge": "NOVIDADE", "regra": "R2" },
+          { "testid": "card-b3-developers",           "estado": "habilitado",   "badge": "NOVIDADE", "regra": "R3" }
+        ]
+      },
+      {
+        "id": "secao_2",
+        "testid": "section-2-title",
+        "texto_titulo": "Comunicação B3",
+        "cards": [
+          { "testid": "card-comunicado-atende-b3",   "estado": "desabilitado", "badge": "EM BREVE", "icone": "notifications", "regra": "R5" },
+          { "testid": "card-oficios-comunicados",    "estado": "habilitado",   "badge": null },
+          { "testid": "card-novidades-b3",           "estado": "habilitado",   "badge": "NOVIDADE", "regra": "R6" }
+        ]
+      },
+      {
+        "id": "secao_3",
+        "testid": "section-3-title",
+        "cards": [
+          { "testid": "card-imercado",   "estado": "habilitado",   "badge": null,       "regra": "R7" },
+          { "testid": "card-btb",        "estado": "habilitado",   "badge": "EM BREVE", "regra": "R7" },
+          { "testid": "card-trademate",  "estado": "desabilitado", "badge": "EM BREVE", "regra": "R8" }
+        ]
+      }
+    ],
+    "elementos_internos_card": [
+      { "testid": "badge-em-breve",   "uso": "marcador visual EM BREVE — aria-disabled=true no container" },
+      { "testid": "badge-novidade",   "uso": "marcador visual NOVIDADE" },
+      { "testid": "card-cta-acessar", "uso": "botão ACESSAR — disabled quando card desabilitado" },
+      { "testid": "card-icon",        "uso": "ícone material (ex: notifications para AtendeB3)" }
+    ]
+  }
+}

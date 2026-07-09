@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<!--
+  Snapshot DOM — módulo Home
+  change_id : DOM-HOME-20260708-001
+  source    : synthetic-eduq-90-2026-07-08
+  story     : EDUQ-90 [HOME] Ajuste Cards Home
+  perfil    : Gestor de Fundos | Projeto Piloto
+  aviso     : Snapshot sintético gerado com base nos requisitos do EDUQ-90.
+              Substituir por captura real do DOM em ambiente de homologação.
+-->
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Home — Projeto Piloto</title>
+</head>
+<body>
+  <main id="conteudo" role="main" aria-label="Página inicial do Projeto Piloto">
+
+    <header class="home-header">
+      <h1 data-testid="home-title" class="home__title">Projeto Piloto</h1>
+    </header>
+
+    <!-- ======================================================
+         SEÇÃO 1
+    ====================================================== -->
+    <section class="home-section" aria-labelledby="section-1-heading">
+      <h2 id="section-1-heading"
+          data-testid="section-1-title"
+          class="home-section__title">
+        Ferramentas
+      </h2>
+
+      <ul class="home-section__cards" role="list">
+
+        <!-- Card: Minha Operação — DESABILITADO / EM BREVE (R1) -->
+        <li class="home-card home-card--disabled"
+            data-testid="card-minha-operacao"
+            aria-disabled="true"
+            aria-label="Minha Operação — Em breve">
+          <span class="home-card__badge home-card__badge--em-breve"
+                data-testid="badge-em-breve"
+                aria-label="Em breve">
+            EM BREVE
+          </span>
+          <div class="home-card__icon" data-testid="card-icon" aria-hidden="true">
+            <span class="material-icons">bar_chart</span>
+          </div>
+          <div class="home-card__body">
+            <h3 class="home-card__title">Minha Operação</h3>
+            <p class="home-card__description">Acompanhe suas operações de negociação.</p>
+          </div>
+          <button class="home-card__cta"
+                  data-testid="card-cta-acessar"
+                  disabled
+                  aria-disabled="true">
+            ACESSAR
+          </button>
+        </li>
+
+        <!-- Card: Tarifação e Lançamentos — HABILITADO -->
+        <li class="home-card"
+            data-testid="card-tarifacao-lancamentos"
+            aria-disabled="false"
+            aria-label="Tarifação e Lançamentos">
+          <div class="home-card__icon" data-testid="card-icon" aria-hidden="true">
+            <span class="material-icons">receipt_long</span>
+          </div>
+          <div class="home-card__body">
+            <h3 class="home-card__title">Tarifação e Lançamentos</h3>
+            <p class="home-card__description">Consulte tarifas e lançamentos financeiros.</p>
+          </div>
+          <button class="home-card__cta"
+                  data-testid="card-cta-acessar"
+                  aria-label="Acessar Tarifação e Lançamentos">
+            ACESSAR
+          </button>
+        </li>
+
+        <!-- Card: Eventos Corporativos — HABILITADO -->
+        <li class="home-card"
+            data-testid="card-eventos-corporativos"
+            aria-disabled="false"
+            aria-label="Eventos Corporativos">
+          <div class="home-card__icon" data-testid="card-icon" aria-hidden="true">
+            <span class="material-icons">event</span>
+          </div>
+          <div class="home-card__body">
+            <h3 class="home-card__title">Eventos Corporativos</h3>
+            <p class="home-card__description">Acompanhe eventos corporativos dos ativos.</p>
+          </div>
+          <button class="home-card__cta"
+                  data-testid="card-cta-acessar"
+                  aria-label="Acessar Eventos Corporativos">
+            ACESSAR
+          </button>
+        </li>
+
+        <!-- Card: Atendimento Buy Side — HABILITADO -->
+        <li class="home-card"
+            data-testid="card-atendimento-buy-side"
+            aria-disabled="false"
+            aria-label="Atendimento Buy Side">
+          <div class="home-card__icon" data-testid="card-icon" aria-hidden="true">
+            <span class="material-icons">support_agent</span>
+          </div>
+          <div class="home-card__body">
+            <h3 class="home-card__title">Atendimento Buy Side</h3>
+            <p class="home-card__description">Acesse o canal de atendimento exclusivo.</p>
+          </div>
+          <button class="home-card__cta"
+                  data-testid="card-cta-acessar"
+                  aria-label="Acessar Atendimento Buy Side">
+            ACESSAR
+          </button>
+        </li>
+
+        <!-- Card: Monitoramento de Plataformas — HABILITADO -->
+        <li class="home-card"
+            data-testid="card-monitoramento-plataformas"
+            aria-disabled="false"
+            aria-label="Monitoramento de Plataformas">
+          <div class="home-card__icon" data-testid="card-icon" aria-hidden="true">
+            <span class="material-icons">monitor_heart</span>
+          </div>
+          <div class="home-card__body">
+            <h3 class="home-card__title">Monitoramento de Plataformas</h3>
+            <p class="home-card__description">Visualize o status das plataformas B3.</p>
+          </div>
+          <button class="home-card__cta"
+                  data-testid="card-cta-acessar"
+                  aria-label="Acessar Monitoramento de Plataformas">
+            ACESSAR
+          </button>
+        </li>
+
+        <!-- Card: Contratação de Serviços — HABILITADO / NOVIDADE (R2) -->
+        <li class="home-card"
+            data-testid="card-contratacao-servicos"
+            aria-disabled="false"
+            aria-label="Contratação de Serviços — Novidade">
+          <span class="home-card__badge home-card__badge--novidade"
+                data-testid="badge-novidade"
+                aria-label="Novidade">
+            NOVIDADE
+          </span>
+          <div class="home-card__icon" data-testid="card-icon" aria-hidden="true">
+            <span class="material-icons">assignment</span>
+          </div>
+          <div class="home-card__body">
+            <h3 class="home-card__title">Contratação de Serviços</h3>
+            <p class="home-card__description">Contrate novos serviços B3 para sua operação.</p>
+          </div>
+          <button class="home-card__cta"
+                  data-testid="card-cta-acessar"
+                  aria-label="Acessar Contratação de Serviços">
+            ACESSAR
+          </button>
+        </li>
+
+        <!-- Card: B3 for Developers — HABILITADO / NOVIDADE (R3) -->
+        <li class="home-card"
+            data-testid="card-b3-developers"
+            aria-disabled="false"
+            aria-label="B3 for Developers — Novidade">
+          <span class="home-card__badge home-card__badge--novidade"
+                data-testid="badge-novidade"
+                aria-label="Novidade">
+            NOVIDADE
+          </span>
+          <div class="home-card__icon" data-testid="card-icon" aria-hidden="true">
+            <span class="material-icons">code</span>
+          </div>
+          <div class="home-card__body">
+            <h3 class="home-card__title">B3 for Developers</h3>
+            <p class="home-card__description">Acesse APIs e documentação para desenvolvedores.</p>
+          </div>
+          <button class="home-card__cta"
+                  data-testid="card-cta-acessar"
+                  aria-label="Acessar B3 for Developers">
+            ACESSAR
+          </button>
+        </li>
+
+      </ul>
+    </section>
+
+    <!-- ======================================================
+         SEÇÃO 2 — Comunicação B3 (era "Comunicados B3" — R4)
+    ====================================================== -->
+    <section class="home-section" aria-labelledby="section-2-heading">
+      <h2 id="section-2-heading"
+          data-testid="section-2-title"
+          class="home-section__title">
+        Comunicação B3
+      </h2>
+
+      <ul class="home-section__cards" role="list">
+
+        <!-- Card: Comunicado AtendeB3 — DESABILITADO / EM BREVE / icone notifications (R5) -->
+        <li class="home-card home-card--disabled"
+            data-testid="card-comunicado-atende-b3"
+            aria-disabled="true"
+            aria-label="Comunicado AtendeB3 — Em breve">
+          <span class="home-card__badge home-card__badge--em-breve"
+                data-testid="badge-em-breve"
+                aria-label="Em breve">
+            EM BREVE
+          </span>
+          <div class="home-card__icon" data-testid="card-icon" aria-hidden="true">
+            <span class="material-icons">notifications</span>
+          </div>
+          <div class="home-card__body">
+            <h3 class="home-card__title">Comunicado AtendeB3</h3>
+            <p class="home-card__description">
+              Avisos emitidos pela Central de Atendimento sobre incidentes ou orientações.
+            </p>
+          </div>
+          <button class="home-card__cta"
+                  data-testid="card-cta-acessar"
+                  disabled
+                  aria-disabled="true">
+            ACESSAR
+          </button>
+        </li>
+
+        <!-- Card: Ofícios e Comunicados — HABILITADO -->
+        <li class="home-card"
+            data-testid="card-oficios-comunicados"
+            aria-disabled="false"
+            aria-label="Ofícios e Comunicados">
+          <div class="home-card__icon" data-testid="card-icon" aria-hidden="true">
+            <span class="material-icons">description</span>
+          </div>
+          <div class="home-card__body">
+            <h3 class="home-card__title">Ofícios e Comunicados</h3>
+            <p class="home-card__description">Acesse ofícios e comunicados oficiais da B3.</p>
+          </div>
+          <button class="home-card__cta"
+                  data-testid="card-cta-acessar"
+                  aria-label="Acessar Ofícios e Comunicados">
+            ACESSAR
+          </button>
+        </li>
+
+        <!-- Card: Novidades B3 — HABILITADO / NOVIDADE (R6) -->
+        <li class="home-card"
+            data-testid="card-novidades-b3"
+            aria-disabled="false"
+            aria-label="Novidades B3 — Novidade">
+          <span class="home-card__badge home-card__badge--novidade"
+                data-testid="badge-novidade"
+                aria-label="Novidade">
+            NOVIDADE
+          </span>
+          <div class="home-card__icon" data-testid="card-icon" aria-hidden="true">
+            <span class="material-icons">new_releases</span>
+          </div>
+          <div class="home-card__body">
+            <h3 class="home-card__title">Novidades B3</h3>
+            <p class="home-card__description">Fique por dentro das novidades e melhorias da plataforma.</p>
+          </div>
+          <button class="home-card__cta"
+                  data-testid="card-cta-acessar"
+                  aria-label="Acessar Novidades B3">
+            ACESSAR
+          </button>
+        </li>
+
+      </ul>
+    </section>
+
+    <!-- ======================================================
+         SEÇÃO 3
+    ====================================================== -->
+    <section class="home-section" aria-labelledby="section-3-heading">
+      <h2 id="section-3-heading"
+          data-testid="section-3-title"
+          class="home-section__title">
+        Mercado
+      </h2>
+
+      <ul class="home-section__cards" role="list">
+
+        <!-- Card: iMercado — HABILITADO (R7) -->
+        <li class="home-card"
+            data-testid="card-imercado"
+            aria-disabled="false"
+            aria-label="iMercado">
+          <div class="home-card__icon" data-testid="card-icon" aria-hidden="true">
+            <span class="material-icons">show_chart</span>
+          </div>
+          <div class="home-card__body">
+            <h3 class="home-card__title">iMercado</h3>
+            <p class="home-card__description">Acesse a plataforma iMercado para análise de mercado.</p>
+          </div>
+          <button class="home-card__cta"
+                  data-testid="card-cta-acessar"
+                  aria-label="Acessar iMercado">
+            ACESSAR
+          </button>
+        </li>
+
+        <!-- Card: BTB — HABILITADO (R7) -->
+        <li class="home-card"
+            data-testid="card-btb"
+            aria-disabled="false"
+            aria-label="BTB">
+          <div class="home-card__icon" data-testid="card-icon" aria-hidden="true">
+            <span class="material-icons">swap_horiz</span>
+          </div>
+          <div class="home-card__body">
+            <h3 class="home-card__title">BTB</h3>
+            <p class="home-card__description">Acesse o sistema de aluguel de ativos BTB.</p>
+          </div>
+          <button class="home-card__cta"
+                  data-testid="card-cta-acessar"
+                  aria-label="Acessar BTB">
+            ACESSAR
+          </button>
+        </li>
+
+        <!-- Card: Trademate — DESABILITADO / EM BREVE (R8) -->
+        <li class="home-card home-card--disabled"
+            data-testid="card-trademate"
+            aria-disabled="true"
+            aria-label="Trademate — Em breve">
+          <span class="home-card__badge home-card__badge--em-breve"
+                data-testid="badge-em-breve"
+                aria-label="Em breve">
+            EM BREVE
+          </span>
+          <div class="home-card__icon" data-testid="card-icon" aria-hidden="true">
+            <span class="material-icons">insights</span>
+          </div>
+          <div class="home-card__body">
+            <h3 class="home-card__title">Trademate</h3>
+            <p class="home-card__description">Plataforma de análise avançada de negociações.</p>
+          </div>
+          <button class="home-card__cta"
+                  data-testid="card-cta-acessar"
+                  disabled
+                  aria-disabled="true">
+            ACESSAR
+          </button>
+        </li>
+
+      </ul>
+    </section>
+
+  </main>
+</body>
+</html>

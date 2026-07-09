@@ -1,0 +1,111 @@
+{
+  "module": "ativos_aceitos_garantias",
+  "source": "manual-chat-import-2026-07-01",
+  "notes": [
+    "Mapa inicial derivado do snapshot DOM enviado no chat.",
+    "Priorizar aria-label, role, id e data-testid quando disponiveis.",
+    "Nao reutilizar estes locators para limites_posicoes sem um snapshot real da tela correta."
+  ],
+  "locators": [
+    {
+      "name": "main_content",
+      "selector": "css:main#conteudo",
+      "strategy": "id"
+    },
+    {
+      "name": "breadcrumb_nav",
+      "selector": "css:nav[aria-label='Caminho de navegação']",
+      "strategy": "aria-label"
+    },
+    {
+      "name": "page_title",
+      "selector": "css:h1.b3-section__title",
+      "strategy": "semantic-heading"
+    },
+    {
+      "name": "back_button",
+      "selector": "css:button[aria-label='Voltar para a página anterior']",
+      "strategy": "aria-label"
+    },
+    {
+      "name": "search_form",
+      "selector": "css:form[role='search'][aria-label='Busca e filtros de ativos']",
+      "strategy": "role+aria-label"
+    },
+    {
+      "name": "search_input",
+      "selector": "css:input[aria-label='Campo de busca por Ticker ou ISIN']",
+      "strategy": "aria-label"
+    },
+    {
+      "name": "category_filter_group",
+      "selector": "css:[role='group'][aria-label='Filtrar por categoria']",
+      "strategy": "role+aria-label"
+    },
+    {
+      "name": "clear_filters_button",
+      "selector": "css:button[aria-label='Limpar Filtros']",
+      "strategy": "aria-label"
+    },
+    {
+      "name": "export_button",
+      "selector": "css:button[aria-label='Exportar Arquivo']",
+      "strategy": "aria-label"
+    },
+    {
+      "name": "export_menu",
+      "selector": "css:ul[role='menu'][aria-label='Opções de exportação']",
+      "strategy": "role+aria-label"
+    },
+    {
+      "name": "export_current_csv",
+      "selector": "css:button[aria-label='Exportar arquivo CSV consulta atual']",
+      "strategy": "aria-label"
+    },
+    {
+      "name": "export_full_csv",
+      "selector": "css:button[aria-label='Exportar arquivo CSV base completa']",
+      "strategy": "aria-label"
+    },
+    {
+      "name": "data_table",
+      "selector": "css:table[aria-label='Tabela de ativos aceitos em garantia']",
+      "strategy": "aria-label"
+    },
+    {
+      "name": "table_headers",
+      "selector": "css:table[aria-label='Tabela de ativos aceitos em garantia'] th",
+      "strategy": "table-structure"
+    },
+    {
+      "name": "result_counter",
+      "selector": "css:div[aria-live='polite'][aria-atomic='true']",
+      "strategy": "aria-live"
+    },
+    {
+      "name": "pagination_counter",
+      "selector": "css:p.paginaDinamica",
+      "strategy": "class"
+    },
+    {
+      "name": "page_size_combobox",
+      "selector": "css:input[role='combobox'][aria-controls='listbox_']",
+      "strategy": "role+aria-controls"
+    },
+    {
+      "name": "next_page_button",
+      "selector": "css:button#paginator_btn_nextPage",
+      "strategy": "id"
+    },
+    {
+      "name": "last_page_button",
+      "selector": "css:button#paginator_btn_lastPage",
+      "strategy": "id"
+    },
+    {
+      "name": "footer_manual_link",
+      "selector": "css:a[aria-label='Abre o manual de administração de risco e glossário em página web']",
+      "strategy": "aria-label"
+    }
+  ]
+}

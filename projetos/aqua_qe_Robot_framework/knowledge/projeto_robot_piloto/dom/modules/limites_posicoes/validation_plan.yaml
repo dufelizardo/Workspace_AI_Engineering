@@ -1,0 +1,91 @@
+module: limites_posicoes
+baseline_change_id: DOM-LIMITES_POSICOES-20260701-001
+source: current-real-dom-baseline
+status: draft
+
+checks:
+  - id: BASE-001
+    name: Estrutura base da pagina
+    priority: high
+    validate:
+      - main#conteudo exists
+      - section[aria-label='Limites de Posições'] exists
+      - breadcrumb exists
+      - h1 contains 'Limites de Posições'
+      - subtitle exists
+      - update timestamp exists
+      - back button exists and has aria-label
+
+  - id: TAB-001
+    name: Abas de mercado
+    priority: high
+    validate:
+      - Mercado Listado tab exists
+      - Mercado Balcão tab exists
+      - one tab is selected via aria-selected=true
+      - active tab must match visible table/filters
+
+  - id: FILTER-001
+    name: Busca e filtros
+    priority: high
+    validate:
+      - search input exists in active tab
+      - help text indicates minimum 3 characters
+      - validation message is shown for 1 or 2 characters
+      - search input accepts only alphanumeric characters
+      - search input enforces max length of 20 characters
+      - market filters exist per tab
+      - clear filters button exists
+      - applied filters chips are rendered when a filter is selected
+
+  - id: EXPORT-001
+    name: Exportacao
+    priority: high
+    validate:
+      - export button exists
+      - export menu exists when opened
+      - current-consult options exist for CSV XLSX TXT
+      - base-complete options exist for CSV XLSX TXT
+      - disabled state is respected when no export scope is available
+
+  - id: TABLE-001
+    name: Estrutura da tabela
+    priority: high
+    validate:
+      - table exists for active market
+      - correct headers exist for Mercado Listado
+      - correct headers exist for Mercado Balcão
+      - headers expose role=columnheader
+      - headers expose aria-sort
+      - info icons expose tooltips
+
+  - id: PAGINATION-001
+    name: Paginacao
+    priority: medium
+    validate:
+      - result counter exists
+      - page size selector exists
+      - first/previous/next/last controls exist
+      - disabled state is correct on boundaries
+
+  - id: STATE-001
+    name: Estados semanticos da linha
+    priority: medium
+    validate:
+      - natureza badge is visible
+      - nivel badge is visible
+      - barrier badge is visible for Mercado Balcão
+      - direction markers are visible when present
+
+update_policy:
+  on_dom_change:
+    - capture new snapshot
+    - compute diff against baseline
+    - review contract json
+    - update locators only after validation
+
+locator_policy:
+  - prefer aria-label over text when stable
+  - prefer role and id over css classes
+  - use text-based selectors only when the semantic attrs are absent
+  - keep one canonical locator per semantic element
