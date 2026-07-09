@@ -58,3 +58,6 @@ Thumbs.db
 # Logs
 logs/
 *.log
+
+# AQuA-QE tem repositório próprio
+projetos/aqua_qe_Robot_framework/
