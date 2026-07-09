@@ -1,3 +1,8 @@
+# Projetos — apenas .template é versionado aqui
+# Cada projeto criado com novo-projeto.ps1 tem seu próprio repositório Git
+projetos/*
+!projetos/.template
+
 # Python
 __pycache__/
 *.py[cod]
