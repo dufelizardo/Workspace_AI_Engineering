@@ -1,0 +1,60 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# uv / virtualenv
+.venv/
+venv/
+uv.lock
+
+# Environment
+.env
+*.env.local
+
+# Dados sensíveis / grandes
+data/raw/
+data/processed/
+data/outputs/
+*.csv
+*.parquet
+*.jsonl
+*.pkl
+*.pickle
+chroma_db/
+qdrant_storage/
+faiss_index/
+
+# Modelos locais / cache HuggingFace
+models/
+.cache/huggingface/
+*.bin
+*.safetensors
+
+# Testes
+.pytest_cache/
+htmlcov/
+.coverage
+coverage.xml
+
+# IDE
+.vscode/*
+!.vscode/settings.json
+!.vscode/extensions.json
+.idea/
+*.iml
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+logs/
+*.log

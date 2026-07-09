@@ -1,0 +1,55 @@
+[project]
+name = "workspace-ai-engineering"
+version = "0.1.0"
+requires-python = ">=3.12"
+dependencies = [
+    # Modelagem e configuração
+    "pydantic>=2.0",
+    "python-dotenv>=1.0",
+    # HTTP
+    "httpx>=0.28",
+    # Utilitários
+    "rich>=13.0",
+    "loguru>=0.7",
+    "typer>=0.15",
+    # Testes
+    "pytest>=8.0",
+    "pytest-cov>=6.0",
+]
+
+[tool.uv.workspace]
+members = ["projetos/*"]
+
+# ---------------------------------------------------------------------------
+# Ruff
+# ---------------------------------------------------------------------------
+[tool.ruff]
+target-version = "py312"
+line-length = 88
+
+[tool.ruff.lint]
+select = ["E", "W", "F", "I", "UP", "B", "C4", "SIM", "RUF"]
+ignore = ["E501"]
+
+[tool.ruff.lint.isort]
+known-first-party = []
+
+[tool.ruff.format]
+quote-style = "double"
+indent-style = "space"
+
+# ---------------------------------------------------------------------------
+# BasedPyright
+# ---------------------------------------------------------------------------
+[tool.basedpyright]
+pythonVersion = "3.12"
+typeCheckingMode = "standard"
+venvPath = "."
+venv = ".venv"
+
+# ---------------------------------------------------------------------------
+# Pytest (raiz — projetos podem sobrescrever)
+# ---------------------------------------------------------------------------
+[tool.pytest.ini_options]
+addopts = "--tb=short -q"
+testpaths = ["tests"]
