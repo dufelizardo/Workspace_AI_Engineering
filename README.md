@@ -122,9 +122,24 @@ Após criar o projeto, edite o `pyproject.toml` e descomente apenas as dependên
 - Cada projeto mantém seu próprio `.env` (nunca commitado)
 - SDKs de LLM providers são instalados por projeto, não no root
 
-### Repositório Git por projeto
+### Versionamento de projetos
 
-`projetos/*` está no `.gitignore` deste repositório — **apenas `projetos/.template` é versionado aqui**. Cada projeto criado com `novo-projeto.ps1` deve ter seu próprio repositório Git:
+Por padrão, `projetos/*` está no `.gitignore` — projetos com escopo independente devem ter seu próprio repositório Git. Projetos que fazem parte do workspace podem ser explicitamente liberados com uma exceção no `.gitignore`:
+
+```gitignore
+projetos/*
+!projetos/.template
+!projetos/rag-documentos   ← exemplo de projeto versionado no workspace
+```
+
+**Projetos versionados neste workspace:**
+
+| Projeto | Descrição |
+|---|---|
+| `.template` | Base para scaffolding de novos projetos |
+| `rag-documentos` | Pipeline RAG: ingestão → embedding → Qdrant → query |
+
+**Para projetos com repositório próprio:**
 
 ```powershell
 cd projetos/<nome>

@@ -291,7 +291,7 @@ Logs são suficientes para debugging local. Em sistemas distribuídos com múlti
 |---|---|---|
 | Workspace base | ✅ Concluído | uv workspace, pyproject.toml, pre-commit, .vscode |
 | Template de projeto | ✅ Concluído | Scaffolding via `novo-projeto.ps1` |
-| Projeto RAG | Planejado | Pipeline completo: ingestão → embedding → Qdrant → query |
+| Projeto RAG (`rag-documentos`) | ✅ Iniciado | Scaffold criado; pipeline: ingestão → embedding → Qdrant → query |
 | Projeto Agente | Planejado | Agente LangGraph com ferramentas e LangSmith |
 | Servidor MCP | Planejado | MCP server Python expondo recursos do workspace |
 | API de IA | Planejado | FastAPI wrapper com autenticação e OTel |
