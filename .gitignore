@@ -1,7 +1,8 @@
-# Projetos — apenas .template é versionado aqui
-# Cada projeto criado com novo-projeto.ps1 tem seu próprio repositório Git
+# Projetos — apenas .template e projetos explicitamente liberados são versionados aqui
+# Cada projeto criado com novo-projeto.ps1 pode ter repositório próprio ou ser incluído no workspace
 projetos/*
 !projetos/.template
+!projetos/rag-documentos
 
 # Python
 __pycache__/

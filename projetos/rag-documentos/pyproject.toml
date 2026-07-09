@@ -1,0 +1,33 @@
+[project]
+name = "rag-documentos"
+version = "0.1.0"
+requires-python = ">=3.12"
+dependencies = [
+    # LLM Providers
+    "anthropic>=0.50",
+    "openai>=1.0",
+    # Orquestracao
+    "langchain>=0.3",
+    "langchain-community>=0.3",
+    "langsmith>=0.2",
+    # Embeddings
+    "sentence-transformers>=3.0",
+    # Banco Vetorial
+    "qdrant-client>=1.12",
+    # Processamento de documentos
+    "pymupdf>=1.24",
+    "pypdf>=5.0",
+    "beautifulsoup4>=4.12",
+    "lxml>=5.0",
+    # API
+    "fastapi>=0.115",
+    "uvicorn[standard]>=0.32",
+]
+
+[tool.pytest.ini_options]
+addopts = "--tb=short -q --cov=src --cov-report=term-missing"
+testpaths = ["tests"]
+
+[tool.coverage.run]
+source = ["src"]
+omit = ["tests/*"]
