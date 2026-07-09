@@ -69,3 +69,4 @@ projetos/<nome>/
 - SDKs de LLM providers (`openai`, `anthropic`, etc.) são instalados **por projeto**, não no root.
 - `src/<slug>/` usa o **src layout** — o pacote não está na raiz do projeto, então `uv run` é necessário para que o Python encontre o módulo nos testes.
 - Hífens no nome do projeto viram underscores no slug do pacote (`meu-agente` → `src/meu_agente/`).
+- **Cada projeto tem seu próprio repositório Git.** `projetos/*` está no `.gitignore` deste workspace — somente `projetos/.template` é versionado aqui. Após criar um projeto com `novo-projeto.ps1`, inicializar `git init` dentro de `projetos/<nome>/` e publicar em repositório próprio.

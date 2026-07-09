@@ -122,6 +122,19 @@ Após criar o projeto, edite o `pyproject.toml` e descomente apenas as dependên
 - Cada projeto mantém seu próprio `.env` (nunca commitado)
 - SDKs de LLM providers são instalados por projeto, não no root
 
+### Repositório Git por projeto
+
+`projetos/*` está no `.gitignore` deste repositório — **apenas `projetos/.template` é versionado aqui**. Cada projeto criado com `novo-projeto.ps1` deve ter seu próprio repositório Git:
+
+```powershell
+cd projetos/<nome>
+git init
+git remote add origin <url>
+git add .
+git commit -m "chore: scaffold inicial"
+git push -u origin main
+```
+
 ---
 
 ## Modelos locais com Ollama
