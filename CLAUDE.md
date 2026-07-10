@@ -69,5 +69,5 @@ projetos/<nome>/
 - SDKs de LLM providers (`openai`, `anthropic`, etc.) são instalados **por projeto**, não no root.
 - `src/<slug>/` usa o **src layout** — o pacote não está na raiz do projeto, então `uv run` é necessário para que o Python encontre o módulo nos testes.
 - Hífens no nome do projeto viram underscores no slug do pacote (`meu-agente` → `src/meu_agente/`).
-- **Versionamento de projetos é opt-in.** `projetos/*` está no `.gitignore`. Projetos versionados neste workspace têm exceção explícita no `.gitignore` (`!projetos/<nome>`). Projetos com escopo independente recebem `git init` próprio e repositório separado. Nunca remover o `.git` de um projeto independente para incluí-lo aqui sem autorização explícita.
+- **Versionamento de projetos está fechado.** `projetos/*` está no `.gitignore`; as únicas exceções são `.template` e `rag-documentos`, já liberadas. Nenhum projeto novo deve receber exceção no `.gitignore` — todo projeto criado a partir de agora recebe `git init` próprio e repositório separado, sem exceção. Nunca remover o `.git` de um projeto independente para incluí-lo aqui sem autorização explícita.
 - **Projetos versionados aqui:** `.template`, `rag-documentos`.

@@ -124,7 +124,7 @@ Após criar o projeto, edite o `pyproject.toml` e descomente apenas as dependên
 
 ### Versionamento de projetos
 
-Por padrão, `projetos/*` está no `.gitignore` — projetos com escopo independente devem ter seu próprio repositório Git. Projetos que fazem parte do workspace podem ser explicitamente liberados com uma exceção no `.gitignore`:
+`projetos/*` está no `.gitignore`. As únicas exceções autorizadas são `.template` e `rag-documentos` — essa lista está fechada. Todo projeto criado a partir de agora tem escopo independente e recebe seu próprio repositório Git; não recebe exceção no `.gitignore`:
 
 ```gitignore
 projetos/*

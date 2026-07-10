@@ -1,5 +1,5 @@
-# Projetos — apenas .template e projetos explicitamente liberados são versionados aqui
-# Cada projeto criado com novo-projeto.ps1 pode ter repositório próprio ou ser incluído no workspace
+# Projetos — lista de exceções fechada: apenas .template e rag-documentos são versionados aqui
+# Todo projeto novo criado com novo-projeto.ps1 recebe repositório próprio, sem exceção nesta lista
 projetos/*
 !projetos/.template
 !projetos/rag-documentos
@@ -19,7 +19,6 @@ build/
 # uv / virtualenv
 .venv/
 venv/
-uv.lock
 
 # Environment
 .env
@@ -64,6 +63,3 @@ Thumbs.db
 # Logs
 logs/
 *.log
-
-# AQuA-QE tem repositório próprio
-projetos/aqua_qe_Robot_framework/
